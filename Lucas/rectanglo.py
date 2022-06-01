@@ -1,16 +1,23 @@
+from enum import Enum
+class direction(Enum):
+    HORIZ = "horizontal",
+    VERT = "vertical"
+
+
 def carre (dim) : 
     print(' ' + '__'* dim +'  ' )
     for j in range(dim):
         chain = "|"
         for i in range(dim) : 
-            chain += '**'
+            chain += '  '
             if i == dim - 1 :
                 chain += '|'
         print(chain)
         chain = ''
     print(' ' + '--'* dim +'  ' )
     
-def rectangle (dim, direction) : 
+def rectangle (long, direction) : 
+    
     
     if direction == 'horizontale' : 
         vert = 1
@@ -23,7 +30,7 @@ def rectangle (dim, direction) :
     for j in range(dim*vert):
         chain = "|"
         for i in range(dim*horiz) : 
-            chain += '**'
+            chain += '  '
             if i == (dim*horiz) -1 :
                 chain += '|'
         print(chain)
@@ -32,7 +39,7 @@ def rectangle (dim, direction) :
 
 a = int(input())
 carre(a)
-rectangle(a,'verticale')
+rectangle(a,'horizontale')
 
 
     
