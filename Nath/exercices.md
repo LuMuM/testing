@@ -12,6 +12,7 @@ Attention aux terminologies : une fonction et une procédure se ressemblent beau
 
 Astuce : la fonction à utiliser pour saisir une donnée est `input()` .
 
+
 ## Exercice 2
 
 Écrire une fonction qui, à chaque chaîne de caractères, retirera les lettres dans une liste fournie en entrée (les voyelles, par ex.).

@@ -1,0 +1,102 @@
+#Exercice 0
+
+import charset_normalizer
+
+
+def puissance(x,i):
+    p = x**i
+    return(p)
+    
+
+print(puissance(4,2))
+
+#Exercice 1
+
+
+#def stop():
+#    x=''
+#    i=0
+#    while x != "stop":
+#        x=input()
+#        i+=1
+#    print(i)
+
+#stop()
+
+
+print('----------------------')
+
+#Exercice 2
+
+voyelles = ["a","e","i","o","u","y"]
+
+def sup_voyelle(mot, voyelles):
+        
+    sortie=[]
+    indice=[]
+
+    for i in range(0,len(mot)):
+        if mot[i] in voyelles:
+            indice.append(i)
+    
+    for i in range(0,len(mot)):
+        if i not in indice:
+            sortie += mot[i]
+    
+    print(sortie)
+
+sup_voyelle("Luan", voyelles)
+
+
+#Fonction diagonale, remplace les éléments diagonaux par le paramètre 'diag'
+
+#passe en revue tout les indices et vérifie si les indices sont égaux (càd: éléments diagonaux)
+def diagonale(matrice, diag):
+
+    for i in range(0,len(matrice)):
+        for j in range(0,len(matrice)):
+            if i==j:
+                matrice[i][j] = diag
+            else:
+                matrice[i][j] = 'pas diag'
+    return matrice
+
+
+mat = [[1,2,3],[4,5,6],[7,8,9]]
+diag = 'diag'
+print(diagonale(mat,diag))
+
+
+n= 10
+
+def factorielle(n):
+    i=0
+    while i<n:
+        n = n * (n-1)
+        i +=1
+    return(n)
+
+print(factorielle(4))
+
+    
+
+
+
+
+#FizzBuzz
+
+list2 = list(range(20))
+print(list2)
+
+def Fizzbuzz(liste):
+    for i in liste:
+        if i%3== 0 and i%5==0:
+            print('FizzBuzz')
+        elif i%3== 0:
+            print('Fizz')
+        elif i%5== 0:
+            print('Buzz')
+        else:
+            print(i)
+
+Fizzbuzz(list2)

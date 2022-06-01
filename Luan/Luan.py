@@ -67,7 +67,6 @@ print(bigbang)
 
 print(sorted(a, reverse=True))
 
-
-
 a.sort(reverse=True)
 print(a)
+

@@ -10,3 +10,8 @@ def moy(note1,note2,note3,note4):
     return moy
 
 print(moy(1,2,3,4))
+x=5
+y=5
+
+if y != 0 :
+   print(x/y)
